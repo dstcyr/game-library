@@ -1,0 +1,23 @@
+<storyboard name="intro">
+	<Scene id="room" map="maps/sontosHouse.tmx" focusX="14" focusY="19" blocking="false"/>
+	<Screen id="blackscreen" red="0" green="0" blue="0" alpha="255" blocking="false"/>
+	<Npc id="storyhero" data="characters/sleeper.xml" map="maps/sontosHouse" x="24" y="12" blocking="false"/>
+	<Play id="rain" sound="sounds/rain.wav" volume="100" blocking="true"/>
+	<Wait seconds="1" blocking="true"/>
+	<Caption id="place" style="title" text="Village of Sontos" blocking="true"/>
+	<Caption id="time" style="subtitle" text="MIDNIGHT" blocking="true"/>
+	<Wait seconds="2" blocking="true"/>
+	<Fadein id="place" blocking="false"/>
+	<Fadein id="time" blocking="true"/>
+	<Remove id="place" blocking="true"/>
+	<Remove id="time" blocking="true"/>
+	<Npc id="StoryGuard" data="characters/guard.xml" map="maps/sontosHouse" x="29" y="16" blocking="false"/>
+	<Moveto id="StoryGuard" destinationX="25" destination="12" blocking="true"/>
+	<Fadein id="blackscreen" blocking="true"/>
+	<Say id="StoryGuard" text="Take Him!" duration="3" blocking="true"/>
+	<Wait seconds="5" blocking="true"/>
+	<Fadeout id="blackscreen" blocking="true"/>
+	<Remove id="room" blocking="true"/>
+	<Stop id="rain" blocking="true"/>
+	<Fadein id="blackscreen" blocking="true"/>
+</storyboard>

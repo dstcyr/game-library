@@ -1,0 +1,5 @@
+<character depth="2">
+	<clips rowsize="1" framewidth="128" frameheight="128" default="attack" image="textures/goblin.png">
+		<clip name="attack" start="0" count="1" delay="0.1"/>
+	</clips>
+</character>

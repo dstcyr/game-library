@@ -1,0 +1,22 @@
+<character depth="2">
+	<clips rowsize="8" framewidth="128" frameheight="128" image="textures/mage_combat.png">
+		<clip name="prone" start="49" count="2" delay="0.1"/>
+		<clip name="attack" start="0" count="7" delay="0.1"/>
+		<clip name="use" start="39" count="8" delay="0.1"/>
+		<clip name="hurt" start="7" count="3" delay="0.1"/>
+		<clip name="standby" start="34" count="4" delay="0.1"/>
+		<clip name="advance" start="34" count="4" delay="0.1"/>
+		<clip name="retreat" start="59" count="4" delay="0.1"/>
+		<clip name="death" start="24" count="9" delay="0.1"/>
+		<clip name="victory" start="51" count="8" delay="0.1"/>
+	</clips>
+	
+	<controllers default="combat_standby">
+		<controler name="combat_standby" next=""/>
+		<controler name="combat_run" next=""/>
+		<controler name="combat_move" next=""/>
+		<controler name="combat_hurt" next="combat_standby"/>
+		<controler name="combat_die" next=""/>
+	</controllers>
+	
+</character>

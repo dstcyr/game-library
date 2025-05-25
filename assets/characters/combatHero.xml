@@ -1,0 +1,22 @@
+<character depth="2">
+	<clips rowsize="8" framewidth="128" frameheight="128" default="attack" image="textures/hero_combat.png">
+		<clip name="attack" start="0" count="5" delay="0.1"/>
+		<clip name="victory" start="5" count="4" delay="0.1"/>
+		<clip name="prone" start="17" count="2" delay="0.1"/>
+		<clip name="standby" start="33" count="4" delay="0.1"/>
+		<clip name="retreat" start="55" count="4" delay="0.1"/>
+		<clip name="use" start="43" count="12" delay="0.1"/>
+		<clip name="hurt" start="19" count="4" delay="0.1"/>
+		<clip name="advance" start="33" count="4" delay="0.1"/>
+		<clip name="death" start="20" count="7" delay="0.1"/>
+	</clips>
+	
+	<controllers default="combat_standby">
+		<controler name="combat_standby" next=""/>
+		<controler name="combat_run" next=""/>
+		<controler name="combat_move" next=""/>
+		<controler name="combat_hurt" next="combat_standby"/>
+		<controler name="combat_die" next=""/>
+	</controllers>
+	
+</character>

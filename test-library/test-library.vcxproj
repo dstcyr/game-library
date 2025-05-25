@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{db99a2c6-7737-420c-9e44-1443268c50f6}</ProjectGuid>
+    <RootNamespace>testlibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>Includes;$(SolutionDir)game-library\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)Vendor\sdl2\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_image\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_ttf\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\dlls\*.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>Includes;$(SolutionDir)game-library\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)Vendor\sdl2\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_image\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_ttf\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\dlls\*.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>Includes;$(SolutionDir)game-library\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)Vendor\sdl2\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_image\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_ttf\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\dlls\*.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>Includes;$(SolutionDir)game-library\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)Vendor\sdl2\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_image\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_ttf\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\lib\*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\dlls\*.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\combat\CEAttack.cpp" />
+    <ClCompile Include="Sources\combat\CEDebug.cpp" />
+    <ClCompile Include="Sources\combat\CEEnemyDie.cpp" />
+    <ClCompile Include="Sources\combat\CETurn.cpp" />
+    <ClCompile Include="Sources\combat\CombatActor.cpp" />
+    <ClCompile Include="Sources\combat\CombatEventQueue.cpp" />
+    <ClCompile Include="Sources\combat\CombatHurt.cpp" />
+    <ClCompile Include="Sources\combat\CombatManager.cpp" />
+    <ClCompile Include="Sources\combat\CombatMove.cpp" />
+    <ClCompile Include="Sources\combat\CombatTarget.cpp" />
+    <ClCompile Include="Sources\combat\EnemyHurt.cpp" />
+    <ClCompile Include="Sources\combat\VictoryState.cpp" />
+    <ClCompile Include="Sources\controllers\CombatDieController.cpp" />
+    <ClCompile Include="Sources\controllers\CombatMoveController.cpp" />
+    <ClCompile Include="Sources\controllers\CombatRunController.cpp" />
+    <ClCompile Include="Sources\controllers\CombatStandbyController.cpp" />
+    <ClCompile Include="Sources\controllers\IdleController.cpp" />
+    <ClCompile Include="Sources\controllers\MoveController.cpp" />
+    <ClCompile Include="Sources\controllers\ReachController.cpp" />
+    <ClCompile Include="Sources\controllers\SleepController.cpp" />
+    <ClCompile Include="Sources\controllers\StandController.cpp" />
+    <ClCompile Include="Sources\controllers\StrollController.cpp" />
+    <ClCompile Include="Sources\controllers\WaitController.cpp" />
+    <ClCompile Include="Sources\effects\Claw.cpp" />
+    <ClCompile Include="Sources\effects\FloatingNumber.cpp" />
+    <ClCompile Include="Sources\effects\Slash.cpp" />
+    <ClCompile Include="Sources\gui\UIItemEntry.cpp" />
+    <ClCompile Include="Sources\gui\UINotification.cpp" />
+    <ClCompile Include="Sources\inventory\PlayerInventory.cpp" />
+    <ClCompile Include="Sources\scenes\Chest.cpp" />
+    <ClCompile Include="Sources\scenes\Snore.cpp" />
+    <ClCompile Include="Sources\screens\CheatMenu.cpp" />
+    <ClCompile Include="Sources\screens\CombatScreen.cpp" />
+    <ClCompile Include="Sources\screens\GameLocationState.cpp" />
+    <ClCompile Include="Sources\screens\GameMenu.cpp" />
+    <ClCompile Include="Sources\screens\MainMenu.cpp" />
+    <ClCompile Include="Sources\screens\Storyboard.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestAnimation.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestChangeStates.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestFade.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestGameStates.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestInterpolations.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestLogs.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestPrimitiveDraw.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestPushStates.cpp" />
+    <ClCompile Include="Sources\screens\tests\TestUI.cpp" />
+    <ClCompile Include="Sources\screens\UIPartyEntry.cpp" />
+    <ClCompile Include="Sources\screens\UIProgressText.cpp" />
+    <ClCompile Include="Sources\stats\Party.cpp" />
+    <ClCompile Include="Sources\Test.cpp" />
+    <ClCompile Include="Sources\triggers\PopAction.cpp" />
+    <ClCompile Include="Sources\triggers\PushAction.cpp" />
+    <ClCompile Include="Sources\triggers\TeleportAction.cpp" />
+    <ClCompile Include="Sources\triggers\WarpAction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\combat\CEAttack.h" />
+    <ClInclude Include="Includes\combat\CEDebug.h" />
+    <ClInclude Include="Includes\combat\CEEnemyDie.h" />
+    <ClInclude Include="Includes\combat\CETurn.h" />
+    <ClInclude Include="Includes\combat\CombatActor.h" />
+    <ClInclude Include="Includes\combat\CombatEventQueue.h" />
+    <ClInclude Include="Includes\combat\CombatHurt.h" />
+    <ClInclude Include="Includes\combat\CombatManager.h" />
+    <ClInclude Include="Includes\combat\CombatMove.h" />
+    <ClInclude Include="Includes\combat\CombatTarget.h" />
+    <ClInclude Include="Includes\combat\EnemyHurt.h" />
+    <ClInclude Include="Includes\combat\ICombat.h" />
+    <ClInclude Include="Includes\combat\ICombatEvent.h" />
+    <ClInclude Include="Includes\combat\ICombatState.h" />
+    <ClInclude Include="Includes\combat\IEffect.h" />
+    <ClInclude Include="Includes\combat\VictoryState.h" />
+    <ClInclude Include="Includes\Controllers\CombatDieController.h" />
+    <ClInclude Include="Includes\Controllers\CombatMoveController.h" />
+    <ClInclude Include="Includes\Controllers\CombatRunController.h" />
+    <ClInclude Include="Includes\Controllers\CombatStandbyController.h" />
+    <ClInclude Include="Includes\Controllers\IdleController.h" />
+    <ClInclude Include="Includes\Controllers\MoveController.h" />
+    <ClInclude Include="Includes\Controllers\ReachController.h" />
+    <ClInclude Include="Includes\Controllers\SleepController.h" />
+    <ClInclude Include="Includes\Controllers\StandController.h" />
+    <ClInclude Include="Includes\Controllers\StrollController.h" />
+    <ClInclude Include="Includes\Controllers\WaitController.h" />
+    <ClInclude Include="Includes\effects\Claw.h" />
+    <ClInclude Include="Includes\effects\FloatingNumber.h" />
+    <ClInclude Include="Includes\effects\Slash.h" />
+    <ClInclude Include="Includes\gui\UIItemEntry.h" />
+    <ClInclude Include="Includes\gui\UINotification.h" />
+    <ClInclude Include="Includes\inventory\IInventory.h" />
+    <ClInclude Include="Includes\inventory\PlayerInventory.h" />
+    <ClInclude Include="Includes\Scenes\Chest.h" />
+    <ClInclude Include="Includes\Scenes\Snore.h" />
+    <ClInclude Include="Includes\screens\CheatMenu.h" />
+    <ClInclude Include="Includes\screens\CombatScreen.h" />
+    <ClInclude Include="Includes\screens\GameLocationState.h" />
+    <ClInclude Include="Includes\screens\GameMenu.h" />
+    <ClInclude Include="Includes\screens\MainMenu.h" />
+    <ClInclude Include="Includes\screens\Storyboard.h" />
+    <ClInclude Include="Includes\screens\tests\TestAnimation.h" />
+    <ClInclude Include="Includes\screens\tests\TestChangeStates.h" />
+    <ClInclude Include="Includes\screens\tests\TestFade.h" />
+    <ClInclude Include="Includes\screens\tests\TestGameStates.h" />
+    <ClInclude Include="Includes\screens\tests\TestInterpolations.h" />
+    <ClInclude Include="Includes\screens\tests\TestLogs.h" />
+    <ClInclude Include="Includes\screens\tests\TestPrimitiveDraw.h" />
+    <ClInclude Include="Includes\screens\tests\TestPushStates.h" />
+    <ClInclude Include="Includes\screens\tests\TestUI.h" />
+    <ClInclude Include="Includes\screens\UIPartyEntry.h" />
+    <ClInclude Include="Includes\screens\UIProgressText.h" />
+    <ClInclude Include="Includes\stats\IParty.h" />
+    <ClInclude Include="Includes\stats\Party.h" />
+    <ClInclude Include="Includes\triggers\PopAction.h" />
+    <ClInclude Include="Includes\triggers\PushAction.h" />
+    <ClInclude Include="Includes\triggers\TeleportAction.h" />
+    <ClInclude Include="Includes\triggers\WarpAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\game-library\game-library.vcxproj">
+      <Project>{ce269fbc-20d2-4d84-85ed-f1a4a3805790}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,11 @@
+<character depth="2">
+	<clips rowsize="16" framewidth="32" frameheight="48" default="down" image="textures/walk_cycle32.png">
+		<clip name="up" start="16" count="4" delay="0.1"/>
+		<clip name="right" start="20" count="4" delay="0.1"/>
+		<clip name="down" start="24" count="4" delay="0.1"/>
+		<clip name="left" start="28" count="4" delay="0.1"/>
+	</clips>
+	<controllers default="stand">
+		<controler name="stand"/>
+	</controllers>
+</character>
