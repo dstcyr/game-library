@@ -1,0 +1,10 @@
+.vs
+Build
+Temp
+x64
+*.pak
+intermediates
+binaries
+assets
+*.sln
+test-library

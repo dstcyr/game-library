@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\audio\IAudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\audio\SDLAudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\controllers\Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\controllers\ControllerState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\data\ObjectContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\data\Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\graphics\Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\graphics\Fade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\graphics\IGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\graphics\SDLGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\graphics\Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\graphics\SpriteSheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIChoice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIHorizontalBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UINode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIProgress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UISeparator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UITextbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\gui\UIVerticalBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\inputs\IInputs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\inputs\SDLInputs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\logs\FileLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\logs\ILogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\logs\OutputLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\EntityGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\MapTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\ObjectLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\TileLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\Tilemap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maps\Tileset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maths\MathUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maths\Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maths\Tween.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\maths\Vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\packer\Packer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\properties\MapPropertyCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\properties\Property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\properties\PropertyCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\resources\IResources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\resources\PakResources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\save\BufferedFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\save\ISave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\save\SaveGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\Blackboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\GameWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\IWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\ScreenStateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\StackCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\scenes\StateInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\screens\ScreenState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\stats\AttributeSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\stats\CharacterDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\stats\FloatModifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\CaptionState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\ExploreState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\FadeEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\FadeInEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\FadeOutEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\IStoryboardEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\StoryScreenState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\StoryState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\TimedTextboxEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\WaitEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\WaitStateEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\triggers\IAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\triggers\Trigger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\utils\Checks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\utils\IState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\utils\StateStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\utils\StateStackCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\utils\tinyxml2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\audio\SdlAudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\controllers\Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\graphics\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\graphics\Fade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\graphics\SDLGraphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\graphics\Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\graphics\SpriteSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIChoice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIHorizontalBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UISeparator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UITextbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\gui\UIVerticalBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\inputs\SDLInputs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\logs\FileLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\logs\ILogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\logs\OutputLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maps\EntityGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maps\MapTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maps\ObjectLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maps\TileLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maps\Tilemap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maps\Tileset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maths\MathUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\maths\Tween.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\packer\Packer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\properties\MapPropertyCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\properties\Property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\properties\PropertyCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\resources\PakResources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\save\BufferedFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\save\SaveGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\scenes\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\scenes\Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\scenes\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\scenes\GameWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\scenes\ScreenStateMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\scenes\StackCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\stats\AttributeSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\stats\CharacterDefinition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\stats\FloatModifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\CaptionState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\ExploreState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\FadeEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\FadeInEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\FadeOutEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\StoryScreenState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\StoryState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\TimedTextboxEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\WaitEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\storyboard\WaitStateEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\triggers\Trigger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\utils\Checks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\utils\StateStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\utils\StateStackCommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\utils\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\utils\tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
