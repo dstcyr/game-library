@@ -207,9 +207,6 @@
     <ClInclude Include="Includes\storyboard\CaptionState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Includes\storyboard\ExploreState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Includes\storyboard\FadeEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -405,9 +402,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Sources\storyboard\CaptionState.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\storyboard\ExploreState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Sources\storyboard\FadeEvent.cpp">

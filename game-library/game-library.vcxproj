@@ -247,7 +247,6 @@
     <ClInclude Include="Includes\stats\CharacterDefinition.h" />
     <ClInclude Include="Includes\stats\FloatModifier.h" />
     <ClInclude Include="Includes\storyboard\CaptionState.h" />
-    <ClInclude Include="Includes\storyboard\ExploreState.h" />
     <ClInclude Include="Includes\storyboard\FadeEvent.h" />
     <ClInclude Include="Includes\storyboard\FadeInEvent.h" />
     <ClInclude Include="Includes\storyboard\FadeOutEvent.h" />
@@ -320,7 +319,6 @@
     <ClCompile Include="Sources\stats\CharacterDefinition.cpp" />
     <ClCompile Include="Sources\stats\FloatModifier.cpp" />
     <ClCompile Include="Sources\storyboard\CaptionState.cpp" />
-    <ClCompile Include="Sources\storyboard\ExploreState.cpp" />
     <ClCompile Include="Sources\storyboard\FadeEvent.cpp" />
     <ClCompile Include="Sources\storyboard\FadeInEvent.cpp" />
     <ClCompile Include="Sources\storyboard\FadeOutEvent.cpp" />
