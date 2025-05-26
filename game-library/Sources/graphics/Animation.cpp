@@ -9,7 +9,7 @@
 
 #include "Config.h"
 
-void Animation::Update(float dt)
+bool Animation::Update(float dt)
 {
     if (m_Playing)
     {
@@ -42,12 +42,16 @@ void Animation::Update(float dt)
                         m_OnAnimationEnd();
                         m_OnAnimationEnd = nullptr;
                     }
+
+                    return false;
                 }
             }
 
             UpdateFrame();
         }
     }
+
+    return true;
 }
 
 void Animation::Init(int frameInRows, int frameWidth, int frameHeight)

@@ -65,9 +65,9 @@ bool Game::Initialize()
     return true;
 }
 
-void Game::Start()
+void Game::Start(const std::string& firstState)
 {
-    m_WorldInstance->FadeToState("MainMenu", true);
+    m_WorldInstance->FadeToState(firstState, true);
 
     clock_t lastTime = clock();
     const int frameDuration = 8;

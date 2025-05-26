@@ -9,6 +9,7 @@
 
 #ifndef RESOURCES_IRESOURCES_H
 #define RESOURCES_IRESOURCES_H
+#include <vector>
 
 class IResources
 {

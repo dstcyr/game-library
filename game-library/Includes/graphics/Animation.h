@@ -25,7 +25,7 @@ struct AnimationClip
 class Animation final : public Sprite
 {
 public:
-    void Update(float dt);
+    bool Update(float dt);
     void Init(int frameInRows, int frameWidth, int frameHeight);
     void AddClip(const std::string& name, int start, int count, float delay);
     void Stop();

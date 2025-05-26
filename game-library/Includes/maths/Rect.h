@@ -9,6 +9,7 @@
 
 #ifndef MATHS_RECT_H
 #define MATHS_RECT_H
+#include <string>
 
 template <typename T>
 class Rect

@@ -28,6 +28,11 @@ void Sprite::Draw(float x, float y, float angle)
 #endif
 }
 
+void Sprite::Draw(const Rect<float>& bounds)
+{
+    Draw(bounds.x, bounds.y, bounds.width, bounds.height, 0.0F);
+}
+
 void Sprite::GetSize(int* width, int* height) const
 {
     *width = m_Source.width;

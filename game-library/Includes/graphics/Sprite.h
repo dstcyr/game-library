@@ -10,11 +10,15 @@
 #ifndef GRAPHICS_SPRITE_H
 #define GRAPHICS_SPRITE_H
 
+#include <string>
+#include "maths/Rect.h"
+
 class Sprite
 {
 public:
     virtual ~Sprite() = default;
     virtual void Load(const std::string& filename);
+    virtual void Draw(const Rect<float>& bounds);
     virtual void Draw(float x, float y, float w, float h, float angle);
     virtual void Draw(float x, float y, float angle);
     void GetSize(int* width, int* height) const;
