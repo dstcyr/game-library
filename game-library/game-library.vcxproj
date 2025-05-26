@@ -104,7 +104,7 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)vendor\sdl2\lib;$(SolutionDir)vendor\sdl2_image\lib;$(SolutionDir)vendor\sdl2_ttf\lib;$(SolutionDir)vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\vendor\sdl2\lib;..\vendor\sdl2_image\lib;..\vendor\sdl2_ttf\lib;..\vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
@@ -130,7 +130,7 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)vendor\sdl2\lib;$(SolutionDir)vendor\sdl2_image\lib;$(SolutionDir)vendor\sdl2_ttf\lib;$(SolutionDir)vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\vendor\sdl2\lib;..\vendor\sdl2_image\lib;..\vendor\sdl2_ttf\lib;..\vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
@@ -152,7 +152,7 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)vendor\sdl2\lib;$(SolutionDir)vendor\sdl2_image\lib;$(SolutionDir)vendor\sdl2_ttf\lib;$(SolutionDir)vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\vendor\sdl2\lib;..\vendor\sdl2_image\lib;..\vendor\sdl2_ttf\lib;..\vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
@@ -178,7 +178,7 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)vendor\sdl2\lib;$(SolutionDir)vendor\sdl2_image\lib;$(SolutionDir)vendor\sdl2_ttf\lib;$(SolutionDir)vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\vendor\sdl2\lib;..\vendor\sdl2_image\lib;..\vendor\sdl2_ttf\lib;..\vendor\sdl2_mixer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
