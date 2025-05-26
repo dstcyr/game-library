@@ -159,6 +159,7 @@ xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\dlls\*.dll" "$(TargetDir)"</Command
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sources\storyboard\ExploreState.cpp" />
     <ClCompile Include="Sources\combat\CEAttack.cpp" />
     <ClCompile Include="Sources\combat\CEDebug.cpp" />
     <ClCompile Include="Sources\combat\CEEnemyDie.cpp" />
@@ -270,6 +271,7 @@ xcopy /Y /D "$(SolutionDir)Vendor\sdl2_mixer\dlls\*.dll" "$(TargetDir)"</Command
     <ClInclude Include="Includes\screens\UIProgressText.h" />
     <ClInclude Include="Includes\stats\IParty.h" />
     <ClInclude Include="Includes\stats\Party.h" />
+    <ClInclude Include="Includes\storyboard\ExploreState.h" />
     <ClInclude Include="Includes\triggers\PopAction.h" />
     <ClInclude Include="Includes\triggers\PushAction.h" />
     <ClInclude Include="Includes\triggers\TeleportAction.h" />

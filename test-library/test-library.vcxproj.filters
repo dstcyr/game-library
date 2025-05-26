@@ -177,6 +177,9 @@
     <ClCompile Include="Sources\gui\UINotification.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\storyboard\ExploreState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Includes\inventory\IInventory.h">
@@ -354,6 +357,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Includes\gui\UINotification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\storyboard\ExploreState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
