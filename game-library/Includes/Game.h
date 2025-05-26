@@ -28,7 +28,7 @@ class Game
 public:
     static Game& Get();
     bool Initialize();
-    void Start();
+    void Start(const std::string& firstState);
     void QuitGame();
 
     IGraphics& Graphics() const { return *m_GraphicsInstance; }

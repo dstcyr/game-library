@@ -10,6 +10,8 @@
 #ifndef SAVE_BUFFEREDFILE_H
 #define SAVE_BUFFEREDFILE_H
 
+#include <string>
+
 class BufferedFile final
 {
 public:

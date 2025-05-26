@@ -13,6 +13,7 @@
 #include "utils/Checks.h"
 #include "maths/MathUtils.h"
 #include <algorithm>
+#include <vector>
 
 template<typename T>
 class TArray

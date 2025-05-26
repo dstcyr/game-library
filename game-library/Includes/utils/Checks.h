@@ -10,6 +10,8 @@
 #ifndef UTILS_CHECKS_H
 #define UTILS_CHECKS_H
 
+#include <Windows.h>
+
 #if defined(_DEBUG)
 
 bool DoAssert(bool aValue, const char* aFile, int aLn, const char* aMsg);
