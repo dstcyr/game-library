@@ -256,12 +256,15 @@
     <ClInclude Include="Includes\storyboard\TimedTextboxEvent.h" />
     <ClInclude Include="Includes\storyboard\WaitEvent.h" />
     <ClInclude Include="Includes\storyboard\WaitStateEvent.h" />
+    <ClInclude Include="Includes\utils\TaskManager.h" />
     <ClInclude Include="Includes\triggers\IAction.h" />
     <ClInclude Include="Includes\triggers\Trigger.h" />
     <ClInclude Include="Includes\utils\Checks.h" />
+    <ClInclude Include="Includes\utils\Delegate.h" />
     <ClInclude Include="Includes\utils\IState.h" />
     <ClInclude Include="Includes\utils\StateStack.h" />
     <ClInclude Include="Includes\utils\StateStackCommands.h" />
+    <ClInclude Include="Includes\utils\Stopwatch.h" />
     <ClInclude Include="Includes\utils\tinyxml2.h" />
     <ClInclude Include="Includes\utils\Utils.h" />
   </ItemGroup>
@@ -327,10 +330,13 @@
     <ClCompile Include="Sources\storyboard\TimedTextboxEvent.cpp" />
     <ClCompile Include="Sources\storyboard\WaitEvent.cpp" />
     <ClCompile Include="Sources\storyboard\WaitStateEvent.cpp" />
+    <ClCompile Include="Sources\utils\TaskManager.cpp" />
     <ClCompile Include="Sources\triggers\Trigger.cpp" />
     <ClCompile Include="Sources\utils\Checks.cpp" />
+    <ClCompile Include="Sources\utils\Delegate.cpp" />
     <ClCompile Include="Sources\utils\StateStack.cpp" />
     <ClCompile Include="Sources\utils\StateStackCommands.cpp" />
+    <ClCompile Include="Sources\utils\Stopwatch.cpp" />
     <ClCompile Include="Sources\utils\tinyxml2.cpp" />
     <ClCompile Include="Sources\utils\Utils.cpp" />
   </ItemGroup>
