@@ -23,7 +23,7 @@ struct FFont
 class SDLGraphics : public IGraphics
 {
 public:
-    bool Initialize() override;
+    bool Initialize(const std::string& title, int w, int h) override;
     void GetScreenSize(int* width, int* height) override;
     void Shutdown() override;
     void Clear() override;

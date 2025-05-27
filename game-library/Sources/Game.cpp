@@ -24,7 +24,7 @@ Game& Game::Get()
     return Instance;
 }
 
-bool Game::Initialize()
+bool Game::Initialize(const std::string& title, int width, int height)
 {
     srand(static_cast<unsigned int>(time(nullptr)));
 
@@ -43,7 +43,7 @@ bool Game::Initialize()
     BX_LOG(ELogLevel::Log, "TinyXml2 " + tinyxmlVersion);
 
     m_GraphicsInstance = new SDLGraphics();
-    if (!m_GraphicsInstance->Initialize())
+    if (!m_GraphicsInstance->Initialize(title, width, height))
     {
         return false;
     }

@@ -13,7 +13,7 @@
 #include <SDL_ttf.h>
 #include <SDL_image.h>
 
-bool SDLGraphics::Initialize()
+bool SDLGraphics::Initialize(const std::string& title, int w, int h)
 {
     std::string sdlVersion = std::to_string(SDL_MAJOR_VERSION) + "." + std::to_string(SDL_MINOR_VERSION) + "." + std::to_string(SDL_PATCHLEVEL);
     BX_LOG(ELogLevel::Log, "SDL " + sdlVersion);
@@ -29,18 +29,22 @@ bool SDLGraphics::Initialize()
         return false;
     }
 
-    SDL_DisplayMode currentDisplayMode;
-    SDL_GetCurrentDisplayMode(0, &currentDisplayMode);
-    int windowWidth = currentDisplayMode.w;
-    int windowHeight = currentDisplayMode.h;
+    // Fullscreen:
+    // SDL_DisplayMode currentDisplayMode;
+    // SDL_GetCurrentDisplayMode(0, &currentDisplayMode);
+    // int windowWidth = currentDisplayMode.w;
+    // int windowHeight = currentDisplayMode.h;
+    int windowWidth = w;
+    int windowHeight = h;
 
     m_Window = SDL_CreateWindow(
-        "jRPG",
+        title.c_str(),
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
         windowWidth,
         windowHeight,
-        SDL_WINDOW_FULLSCREEN_DESKTOP
+        SDL_WINDOW_UTILITY
+        // SDL_WINDOW_FULLSCREEN_DESKTOP
     );
 
     if (m_Window == nullptr)
@@ -54,8 +58,8 @@ bool SDLGraphics::Initialize()
         return false;
     }
 
-    m_Width = 1920;
-    m_Height = 1080;
+    m_Width = 1024;
+    m_Height = 962;
     SDL_RenderSetLogicalSize(m_Renderer, m_Width, m_Height);
 
     if (TTF_Init() == -1)

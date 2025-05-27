@@ -27,7 +27,7 @@ class Game
 {
 public:
     static Game& Get();
-    bool Initialize();
+    bool Initialize(const std::string& title, int width, int height);
     void Start(const std::string& firstState);
     void QuitGame();
 
